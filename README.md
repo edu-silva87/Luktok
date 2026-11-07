@@ -1,9 +1,9 @@
-# Luktok - Sistema de Inteligência Contratual Imobiliária 
+# Luktot - Sistema de Inteligência Contratual Imobiliária 
 
 ## Visão Geral do Projeto
-O **Luktok** é um motor automatizado para gestão do ciclo de vida de contratos imobiliários, desenhado para resolver o maior gargalo das administradoras: a perda de prazos e o risco de reajuste contratuais. 
+O **Luktot** é um motor automatizado para gestão do ciclo de vida de contratos imobiliários, desenhado para resolver o maior gargalo das administradoras: a perda de prazos e o risco de reajuste contratuais. 
 
-Com foco absoluto em **privacidade e conformidade com a LGPD**, toda a inferência de Inteligência Artificial ocorre 100% offline (on-premise) utilizando o Ollama. Em vez de enviar dados sensíveis como CPFs, valores de locação, dados bancários e endereços para nuvens públicas de IA, o Luktok extrai informações estruturadas localmente e delega a matemática complexa para um motor Python determinístico. O resultado é um sistema imune a "alucinações matemáticas", garantindo cálculos exatos de multas, reajustes e vencimentos.
+Com foco absoluto em **privacidade e conformidade com a LGPD**, toda a inferência de Inteligência Artificial ocorre 100% offline (on-premise) utilizando o Ollama. Em vez de enviar dados sensíveis como CPFs, valores de locação, dados bancários e endereços para nuvens públicas de IA, o Luktot extrai informações estruturadas localmente e delega a matemática complexa para um motor Python determinístico. O resultado é um sistema imune a "alucinações matemáticas", garantindo cálculos exatos de multas, reajustes e vencimentos.
 
 ### Principais Casos de Uso
 * **Auditoria de Prazos:** Geração automática de alertas para renovações, prazos limite para notificação de desocupação e agendamento de vistorias.
@@ -27,13 +27,13 @@ O sistema foi desenhado sob o paradigma de *Edge Computing* (computação de bor
 ---
 
 ## Segurança e LGPD (Privacy by Design)
-O Luktok foi construído sob o princípio de *Privacy by Design*. Nenhum trecho do documento deixa a rede local. O uso de LLMs Open-Source rodando no servidor físico da empresa elimina o risco de que dados proprietários sejam utilizados no treinamento de modelos comerciais de terceiros (como OpenAI ou Google), oferecendo blindagem jurídica total no trato de informações pessoais de locadores e locatários.
+O Luktot foi construído sob o princípio de *Privacy by Design*. Nenhum trecho do documento deixa a rede local. O uso de LLMs Open-Source rodando no servidor físico da empresa elimina o risco de que dados proprietários sejam utilizados no treinamento de modelos comerciais de terceiros (como OpenAI ou Google), oferecendo blindagem jurídica total no trato de informações pessoais de locadores e locatários.
 
 ---
 
 ## Arquitetura de Processamento: Agente Autônomo (Padrão ReAct)
 
-O núcleo de inteligência do Luktok opera sob o paradigma **ReAct (Reasoning and Acting)**. Em vez de realizar uma leitura passiva e de mão única, o LLM atua como um agente autônomo que interage ativamente com o contrato. Apoiado pela arquitetura de hardware local — que tira proveito da aceleração do coprocessador Hailo-8 em conjunto com o Raspberry Pi 5 para lidar de forma fluida com as múltiplas requisições de inferência —, o modelo raciocina sobre as cláusulas e delega operações matemáticas e lógicas para ferramentas especializadas no backend.
+O núcleo de inteligência do Luktot opera sob o paradigma **ReAct (Reasoning and Acting)**. Em vez de realizar uma leitura passiva e de mão única, o LLM atua como um agente autônomo que interage ativamente com o contrato. Apoiado pela arquitetura de hardware local — que tira proveito da aceleração do coprocessador Hailo-8 em conjunto com o Raspberry Pi 5 para lidar de forma fluida com as múltiplas requisições de inferência —, o modelo raciocina sobre as cláusulas e delega operações matemáticas e lógicas para ferramentas especializadas no backend.
 
 ### O Ciclo de Processamento
 O LangChain orquestra o agente através de um loop contínuo até a interpretação completa do documento:
