@@ -1,4 +1,4 @@
-# Luktok - Sistema de Inteligência Contratual Imobiliária
+# Luktok - Sistema de Inteligência Contratual Imobiliária 
 
 ## Visão Geral do Projeto
 O **Luktok** é um motor automatizado para gestão do ciclo de vida de contratos imobiliários, desenhado para resolver o maior gargalo das administradoras: a perda de prazos e o risco de reajuste contratuais. 
